@@ -52,7 +52,13 @@ app.get('/posts/:id', (req, res) => {
 app.get('/api/posts', (req, res) => {
     res.json(posts)
 })
-
+app.get('/person',(req,res)=>{
+    res.send({
+        name: 'perosn one',
+        address: 'CA',
+        height: '5fit 7inch'
+    })
+})
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname,'404.html'))
 })
