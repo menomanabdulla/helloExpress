@@ -59,6 +59,13 @@ app.get('/person',(req,res)=>{
         height: '5fit 7inch'
     })
 })
+app.get('/contact',(req,res)=>{
+    res.json({
+        name: 'perosn one',
+        address: 'CA',
+        height: '5fit 7inch'
+    })
+})
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname,'404.html'))
 })
