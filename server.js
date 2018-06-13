@@ -25,12 +25,18 @@ app.get('/about', (req, res) => {
 app.get('/users/:id', (req, res) => {
     res.send(`User ID is ${req.params.id}`)
 })
-
-app.get('/posts/',(req,res)=>{
+app.get('/posts/', (req,res)=>{
     res.render('allposts',{posts})
 })
-app.get('/prduct',(req,res)=>{
-    res.render('index',{products})
+
+app.get('/product', (req,res)=>{
+    res.render('product',{products})
+})
+app.get('/test',(req,res)=>{
+    res.json({
+        purpose: 'test',
+        developed: 'now'
+    })
 })
 app.get('/posts/:id', (req, res) => {
     let id = req.params.id
@@ -38,7 +44,7 @@ app.get('/posts/:id', (req, res) => {
     for(let i = 0;i<posts.length;i++){
         if(posts[i].id == id){
             post = posts[i]
-            break
+            break;
         }
     }
     if(post){
@@ -59,9 +65,10 @@ app.get('/person',(req,res)=>{
         name: 'perosn one',
         address: 'CA',
         height: '5fit 7inch'
-    })
+    });
 })
-app.get('/contact',(req,res)=>{
+
+app.get('/contact',(req,res) => {
     res.json({
         name: 'perosn one',
         address: 'CA',
