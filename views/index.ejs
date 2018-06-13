@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%- title %></title>
 </head>
 <body>
-    <h1><%- title %></h1>
-    <h2><%- data %></h2>
+    <ul style="width: 500x;
+        margin: 0 auto;
+        text-align: center; list-style: none">
+        <% for(let i = 0;i<products.length;i++){ %>
+            <li style="padding: 8px 0;">
+                <h3><%- products[i].catagory %></h3>
+                <p><%- products[i].quntaty %></p>
+            </li>
+        <% } %>
+    </ul>
 </body>
 </html>
