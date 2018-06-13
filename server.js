@@ -49,6 +49,9 @@ app.get('/posts/:id', (req, res) => {
 app.get('/api/posts', (req, res) => {
     res.json(posts)
 })
+app.get('/api/posts/api', (req, res) => {
+    res.json(posts)
+})
 app.get('/person',(req,res)=>{
     res.send({
         name: 'perosn one',
