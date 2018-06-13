@@ -96,7 +96,15 @@ const posts = [
         content: 'Hello from post Three'
     },{
         id: 4,
-        title: 'I am post Four',
-        content: 'Hello from post Four'
+        title: 'I am post Five',
+        content: 'Hello from post Five'
+    },{
+        id: 5,
+        title: 'I am post Five',
+        content: 'Hello from post Five'
+    },{
+        id: 6,
+        title: 'I am post Five',
+        content: 'Hello from post Five'
     }
 ]
