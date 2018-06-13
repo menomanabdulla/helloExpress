@@ -29,7 +29,7 @@ app.get('/users/:id', (req, res) => {
 app.get('/posts/',(req,res)=>{
     res.render('allposts',{posts})
 })
-app.get('/prduct/',(req,res)=>{
+app.get('/prduct',(req,res)=>{
     res.render('index',{products})
 })
 app.get('/posts/:id', (req, res) => {
