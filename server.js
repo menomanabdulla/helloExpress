@@ -29,7 +29,9 @@ app.get('/users/:id', (req, res) => {
 app.get('/posts/',(req,res)=>{
     res.render('allposts',{posts})
 })
-
+app.get('/prduct/',(req,res)=>{
+    res.render('index',{products})
+})
 app.get('/posts/:id', (req, res) => {
     let id = req.params.id
     let post = null
@@ -106,5 +108,23 @@ const posts = [
         id: 6,
         title: 'I am post Five',
         content: 'Hello from post Five'
+    }
+]
+
+const products = [
+    {
+        id: 1,
+        catagory: 'food',
+        quntaty: '200kg'
+    },
+    {
+        id: 2,
+        catagory: 'cloth',
+        quntaty: '2ton'
+    },
+    {
+        id: 3,
+        catagory: 'health',
+        quntaty: '500pc'
     }
 ]
