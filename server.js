@@ -15,8 +15,6 @@ app.get('/', (req, res) => {
        data: 'Say hello form home page'
    })
 })
-
-
 app.get('/about', (req, res) => {
     //console.log(res)
     res.json({
@@ -24,7 +22,6 @@ app.get('/about', (req, res) => {
         dept: 'CSE 22intake,'
     })
 })
-
 app.get('/users/:id', (req, res) => {
     res.send(`User ID is ${req.params.id}`)
 })
